@@ -17,7 +17,7 @@ public class Main {
 
     System.out.println();
     // sell
-    center.sellVehicle("Tayota", "Camary");
+    center.sellVehicle("Toyota", "Camry");
     // попытка продать то, чего нет
     center.sellVehicle("Ford", "Focus");
 
@@ -25,7 +25,9 @@ public class Main {
     center.printAllVehicles();
 
     System.out.println();
-    center.printMostExpensive();
+    center.getMostExpensive();
     center.printCheapest();
+
+    System.out.println();
   }
 }

@@ -21,7 +21,9 @@ public class DealershipCenter {
     if (found.isPresent()) {
       Vehicle sold = found.get();
       stock.remove(sold);
-      System.out.printf("К сожалению, автомобиль \"%s%s\" отсутствует в наличии", brand, model);
+      System.out.printf("Продан автомобиль: %s%n", sold);
+    } else {
+      System.out.printf("К сожалению, автомобиль \"%s %s\" отсутствует в наличии%n", brand, model);
     }
   }
 
